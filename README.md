@@ -16,19 +16,15 @@ And build neovim # see neovim build procedures.
 
 When the program is executed as follows, 
 
-    ```
     ./main &
-    ```
 
 the program does not exit and nvim is in `<defunct>` state, donfirming the xsel process is up and running.
 
-    ```
     akiyosi@pop-os:~/test-go-nvim-ui$ ps -ef | grep nvim
     akiyosi   219795  219789  0 00:56 pts/1    00:00:00 [nvim] <defunct>
     akiyosi@pop-os:~/test-go-nvim-ui$ ps -ef | grep main
     akiyosi   219789  196252  0 00:56 pts/1    00:00:00 ./main
     akiyosi@pop-os:~/test-go-nvim-ui$ ps -ef | grep xsel
     akiyosi   219797    2003  0 00:56 ?        00:00:00 /usr/bin/xsel --nodetach -i -p
-    ```
 
 
